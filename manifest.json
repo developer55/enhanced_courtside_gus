@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Hide scores on Courtside webpage",
   "version": "0.1.1",
-  "description": "Hide scores on Courtside webpage",
+  "description": "Toggle hiding scores on Courtside webpage",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "enhanced_courtside.png"
@@ -10,9 +10,11 @@
   "content_scripts": [
     {
       "matches": ["https://www.courtside1891.basketball/*"],
-      "css": ["styles.css"],
       "js": ["content.js"]
     }
   ],
-  "permissions": ["storage"]
+  "permissions": ["storage", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  }
 }

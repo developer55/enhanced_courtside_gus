@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("toggleStyles");
 
-    // Check stored state
+    // Get stored state
     chrome.storage.local.get("hideScores", (data) => {
         button.textContent = data.hideScores ? "Desactivar" : "Activar";
     });
@@ -15,23 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // Update button text
             button.textContent = newState ? "Desactivar" : "Activar";
 
-            // Notify content script to apply changes
-            chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-                chrome.scripting.executeScript({
-                    target: { tabId: tabs[0].id },
-                    function: toggleStyles,
-                    args: [newState]
-                });
-            });
+            // Send message to content script to update styles
+            chrome.runtime.sendMessage({ action: "toggleStyles", hide: newState });
         });
     });
 });
-
-// Function injected into the webpage
-function toggleStyles(enable) {
-    if (enable) {
-        document.body.classList.add("hide-scores");
-    } else {
-        document.body.classList.remove("hide-scores");
-    }
-}
