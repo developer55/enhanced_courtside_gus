@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Hide scores on Courtside webpage",
   "version": "0.2.0",
   "description": "Toggle hiding scores on Courtside webpage",
