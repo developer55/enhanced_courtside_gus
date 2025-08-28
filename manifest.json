@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Hide scores on Courtside webpage",
   "version": "0.2.0",
   "description": "Toggle hiding scores on Courtside webpage",
@@ -15,6 +15,6 @@
   ],
   "permissions": ["storage", "activeTab"],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   }
 }
