@@ -19,19 +19,23 @@
 
 /****** FRONT PAGE ******/
 
-.hide-scores .game-rail-card__team-name, .game-rail-card__team-score {
+.hide-scores .game-card-v2__team-name, .game-card-v2__team-score {
 	font-weight: 400 !important;
 }
 
-.hide-scores .game-rail-card__team-score {
+.hide-scores .game-card-v2__team-score {
+	font-weight: 400 !important;
+}
+
+.hide-scores .game-card-v2__team-score {
 	filter: blur(8px);
 }
 
-.hide-scores .game-rail-card__team--loser .game-rail-card__team-name {
+.hide-scores .game-card-v2__team--loser .game-card-v2__team-name {
     color: hsla(0,0%,100%,1) !important;
 
 }
 
-.hide-scores .game-rail-card__team--winner:after {
+.hide-scores .game-card-v2__team--winner:after {
 	border: transparent !important;
 }
