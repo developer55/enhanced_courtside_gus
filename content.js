@@ -12,17 +12,17 @@ function getStyleTag() {
     return styleTag;
 }
 
-// Function to define the styles (maintain in one place)
+// Function to define the styles (maintain in one place) - GUS
 function getStyles() {
     return `
         .game-summary__teams { filter: blur(8px); }
         .game-summary__team-name, .game-summary__team-score { opacity: 0.6 !important; }
         .score-breakdown { filter: blur(8px); }
         .score-breakdown .is-bold { font-weight: 400 !important; }
-        .game-rail-card__team-name, .game-rail-card__team-score { font-weight: 400 !important; }
-        .game-rail-card__team-score { filter: blur(8px); }
-        .game-rail-card__team--loser .game-rail-card__team-name { color: hsla(0,0%,100%,1) !important; }
-        .game-rail-card__team--winner:after { border: transparent !important; }
+        .game-card-v2__team-name, .game-card-v2__team-score { font-weight: 400 !important; }
+        .game-card-v2__team-score { filter: blur(8px); }
+        .game-card-v2__team--loser .game-card-v2__team-name { color: hsla(0,0%,100%,1) !important; }
+        .game-card-v2__team--winner:after { border: transparent !important; }
     `;
 }
 
