@@ -16,11 +16,12 @@ function getStyleTag() {
 function getStyles() {
     return `
         .game-summary__teams { filter: blur(8px); }
+        .game-summary__teams .game-summary__team-score { visibility: hidden !important; filter: blur(8px); }
         .game-summary__team-name, .game-summary__team-score { opacity: 0.6 !important; }
-        .score-breakdown { filter: blur(8px); }
+        .score-breakdown { visibility: hidden !important; filter: blur(8px); }
         .score-breakdown .is-bold { font-weight: 400 !important; }
         .game-card-v2__team-name, .game-card-v2__team-score { font-weight: 400 !important; }
-        .game-card-v2__team-score { filter: blur(8px); }
+        .game-card-v2__team-score { visibility: hidden !important; filter: blur(8px); }
         .game-card-v2__team--loser .game-card-v2__team-name { color: hsla(0,0%,100%,1) !important; }
         .game-card-v2__team--winner:after { border: transparent !important; }
     `;
