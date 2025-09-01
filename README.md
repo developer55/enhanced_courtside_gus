@@ -6,14 +6,14 @@ Firefox extension to hide the scores on the Courtside1891 webpage. Copy from Chr
 # bug fix styes names
 .game-rail-card to game-card-v2
 
-== Changelog ==
+# Changelog
 
-= 0.0.1 =
+## 0.0.1
 * First version.
 
-= 0.0.2 =
+## 0.0.2
 Change css classes: .game-rail-card to game-card-v2.
 
-= 0.0.3 =
+## 0.0.3
 We added visibility to hidden in team-score classes.
 To prevent the result and the winner from being guessed by looking at the blurred result and also by looking at the size of the result.
