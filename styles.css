@@ -8,7 +8,13 @@
 	opacity: .6 !important;
 }
 
+.hide-scores .game-summary__teams .game-summary__team-score {
+	visibility: hidden !important;
+	filter: blur(8px);
+}
+
 .hide-scores .score-breakdown {
+	visibility: hidden !important;
 	filter: blur(8px);
 }
 
@@ -28,6 +34,7 @@
 }
 
 .hide-scores .game-card-v2__team-score {
+	visibility: hidden !important;
 	filter: blur(8px);
 }
 
